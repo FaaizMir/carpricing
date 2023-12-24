@@ -10,7 +10,7 @@ import { query } from 'firebase/firestore';
 import { deleteDoc } from 'firebase/firestore';
 import { doc } from 'firebase/firestore';
 import Link from 'next/link';
-import Addcar from "../Addcar/page"
+import Addcar from "../Addcar/Page"
 const page = () => {
 const [data,setData]=useState([]);
 const [isFormVisible,SetIsFormVisible]=useState(false);
