@@ -3,7 +3,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { addDoc,getDoc, collection, doc, updateDoc } from 'firebase/firestore';
-import { db } from '../Firebase/firebaseConfig';
+import { db } from '@/Firebase/firebaseConfig';
 import Link from 'next/link';
 
 

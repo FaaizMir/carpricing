@@ -2,7 +2,7 @@
 "use client"
 import React from 'react'
 import {  collection } from 'firebase/firestore';
-import { db } from '../Firebase/firebaseConfig';
+import { db } from '@/Firebase/firebaseConfig';
 import { onSnapshot } from 'firebase/firestore';
 import { useState } from 'react';
 import { useEffect } from 'react';
