@@ -2,7 +2,7 @@
 "use client"
 import React from 'react'
 import {  collection } from 'firebase/firestore';
-import { db } from '../firebase/firebaseConfig';
+import { db } from '../Firebase/firebaseConfig';
 import { onSnapshot } from 'firebase/firestore';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -11,7 +11,9 @@ import { deleteDoc } from 'firebase/firestore';
 import { doc } from 'firebase/firestore';
 import Link from 'next/link';
 import Addcar from "../Addcar/page"
-const page = () => {
+
+
+const Page = () => {
 const [data,setData]=useState([]);
 const [isFormVisible,SetIsFormVisible]=useState(false);
 const [selectedCarId, setSelectedCarId] = useState(null);
@@ -106,4 +108,4 @@ SetIsFormVisible(true);
    );
   
 }
-export default page;
+export default Page;

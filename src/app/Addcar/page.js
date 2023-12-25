@@ -3,11 +3,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { addDoc,getDoc, collection, doc, updateDoc } from 'firebase/firestore';
-import { db } from '../firebase/firebaseConfig';
+import { db } from '../Firebase/firebaseConfig';
 import Link from 'next/link';
 
 
- const page = ({ carId }) => {
+ const Page = ({ carId }) => {
 
   const [formData, setFormData] = useState({
     make: '',
@@ -265,4 +265,4 @@ import Link from 'next/link';
     </div>
   )
 }
-export default page;
+export default Page;
